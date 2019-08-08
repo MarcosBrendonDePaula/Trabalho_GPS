@@ -65,10 +65,7 @@ body {
 }
 
 .hero-body{
-    background-color: rgb(177, 175, 78);
-    background-position-x: 5%;
-    background-position-y: 0px;
-
+	background-color: rgb(177, 175, 78);
 }
 
 .name{
@@ -82,6 +79,50 @@ body {
     color: rgb(0, 17, 255);
     text-shadow:rgb(255, 255, 255) -1px -1px;
     font-size: 120%;
+}
+
+.teste{
+	width: 200px;
+	margin-left: 43%;
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+.corpo{
+	background-color: beige;
+	background-size: 100%;
+}
+
+.tabs{
+	background-color: brown;
+}
+
+#menu{
+	color: white;
+}
+
+.titulo{
+    color: yellow;
+    padding: 5px;
+    height: 2em;
+    font-size: 1em;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.listas{
+    font-size: 230%;
+    font-style: oblique;
+	color: red;
+	
+}
+
+.hero-bodyy{
+    margin-top: 5%;
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: black;
+    border-top-color: white;
 }
 
         
