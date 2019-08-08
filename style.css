@@ -64,23 +64,6 @@ body {
 	top:1px;
 }
 
-.hero-body{
-	background-color: rgb(177, 175, 78);
-}
-
-.name{
-    color: rgb(255, 0, 0);
-    text-shadow:rgb(0, 0, 0) -2px -2px;
-    font-size: 550%;
-	font-style: italic;
-}
-
-.Subtitle{
-    color: rgb(0, 17, 255);
-    text-shadow:rgb(255, 255, 255) -1px -1px;
-    font-size: 120%;
-}
-
 .teste{
 	width: 200px;
 	margin-left: 43%;
@@ -99,21 +82,22 @@ body {
 
 #menu{
 	color: white;
+	font-family: sans-serif;
 }
 
 .titulo{
-    color: yellow;
+	color: black;
+	font-family: sans-serif;
     padding: 5px;
     height: 2em;
     font-size: 1em;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(203, 223, 149, 0.5)
 }
 
 .listas{
     font-size: 230%;
     font-style: oblique;
-	color: red;
-	
+	color: black
 }
 
 .hero-bodyy{
@@ -122,7 +106,8 @@ body {
     border-left-style: none;
     border-right-style: none;
     border-color: black;
-    border-top-color: white;
+	border-top-color: white;
+	font-family: sans-serif;
 }
 
         
