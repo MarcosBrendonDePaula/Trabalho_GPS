@@ -1,0 +1,21 @@
+*,all{
+  margin:0;
+}
+#menu{
+    background-color: brown;
+    height: 88px;
+}
+body{
+    background-color: beige;
+}
+#items{
+      margin-left: 20%;
+}
+.menuitems{
+    display: inline-block;
+    color:white;
+    margin-top: 2.7%;
+    margin-inline: 7.5%;
+    font-family: 'Amaranth', sans-serif;
+    font-size: 17px;
+}
