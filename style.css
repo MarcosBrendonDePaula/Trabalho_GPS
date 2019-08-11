@@ -28,12 +28,14 @@
 }
 
 .teste{
-	width: 100px;
+	width: 5%;
 	margin-left: 3%;
 	margin-top: 3px;
 	margin-bottom: 3px;
 }
+body{
 
+}
 .corpo{
 	background-color: beige;
 	background-size: 100%;
