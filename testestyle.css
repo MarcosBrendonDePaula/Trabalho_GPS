@@ -17,12 +17,17 @@ body{
     background-color: beige;
 }
 
+p{
+    text-align: justify;
+    font-size: 130%;
+}
+
 .menuitems{
     display: inline-block;
     color:white;
-    font-size: 20px;
+    font-size: 22px;
     text-decoration: none;
-    margin-left: 120px;
+    margin-left: 140px;
 }
 
 #sessoes{
@@ -33,13 +38,43 @@ body{
 #logo{
     float:left;
     margin-left: 1.1%;
-    width: 150px;
-    height: 150px;
+    width: 96px;
+    height: 90px;
 }
-p{
-    margin-top: 10%;
-    font-size: 200%;
+
+
+#sobre{
+    border: thin solid silver;
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 8px; 
+    background-color: #e9e8d0; 
 }
-#aaa{
-    float:right;
+
+#bloco1{
+    padding: 4%;
+}
+
+figure {
+    float: left;
+    width: 30%;
+    text-align: center;
+    border: thin #D3D3D3 solid; 
+    margin: 0.2em;
+    margin-left: 0.5%;
+    padding: 1em;
+    
+}
+.img{
+    width: 250px;
+    height: 400px;
+}
+#feitos{
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1%;
+}
+figcaption{
+    font-size: 130%;
 }
