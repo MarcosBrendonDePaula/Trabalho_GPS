@@ -1,21 +1,45 @@
-*,all{
+*,all,body{
   margin:0;
 }
-#menu{
+body{
+    font-family: 'Amaranth', sans-serif;
+}
+nav{
+    position: sticky;
+    top:0;
+    left:0;
+    z-index:10;
     background-color: brown;
     height: 88px;
+    width: 100%;
 }
 body{
     background-color: beige;
 }
-#items{
-      margin-left: 20%;
-}
+
 .menuitems{
     display: inline-block;
     color:white;
-    margin-top: 2.7%;
-    margin-inline: 7.5%;
-    font-family: 'Amaranth', sans-serif;
-    font-size: 17px;
+    font-size: 20px;
+    text-decoration: none;
+    margin-left: 120px;
+}
+
+#sessoes{
+    position: sticky;
+    display: inline-block;
+    padding: 2%;
+}
+#logo{
+    float:left;
+    margin-left: 1.1%;
+    width: 150px;
+    height: 150px;
+}
+p{
+    margin-top: 10%;
+    font-size: 200%;
+}
+#aaa{
+    float:right;
 }
