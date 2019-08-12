@@ -5,7 +5,7 @@ body{
     font-family: 'Amaranth', sans-serif;
 }
 nav{
-    position: sticky;
+    position: fixed;
     top:0;
     left:0;
     z-index:10;
@@ -15,6 +15,7 @@ nav{
 }
 body{
     background-color: beige;
+    margin-top: 7%;
 }
 
 p{
