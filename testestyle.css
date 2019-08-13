@@ -40,16 +40,7 @@ p{
     float:left;
     margin-left: 1.1%;
     width: 230px;
-    height: 150px;
-}
-
-
-#sobre{
-    border: thin solid silver;
-    margin-top:10px;
-    margin-left: 10px;
-    margin-right: 8px; 
-    background-color: #e9e8d0; 
+    height: 138px;
 }
 
 #bloco1{
@@ -67,7 +58,7 @@ figure {
     
 }
 .img{
-    width: 250px;
+    width: 300px;
     height: 400px;
 }
 #feitos{
@@ -85,6 +76,6 @@ figcaption{
 }
 
 #teste{
-    width: 1350px;
+    width: 1349px;
     height: 400px;
 }
