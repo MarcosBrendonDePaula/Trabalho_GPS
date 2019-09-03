@@ -2,77 +2,63 @@
 *, body, html {
 	margin: 0;
 }
-.bloco{
-	margin-top: 6%;
-}
-.fixed{
-	position: fixed;
+#Menu{
 	width: 100%;
-	z-index: 300;
+	height: 20vh;
+	border:1px solid black;
 }
-.Menu {
-	Display: inline-block;
-	width: 100%;
-	height: 7%;
-	position: fixed;
-	background-color: rgba(0,0,0,0.7);
-	text-align: center;
-}
-
-.botao {
-	border: 5px absolute green;
-	background-color: green;
-	height: 90%;
-	width: 15%;
-	margin-right: 5%;
+#Menu img{
+	margin-top: 2vh;
+	margin-left: 3vh;
+	height: 17vh;
+	width: 17vh;
+	display: inline-block;
 }
 
-.teste{
-	width: 5%;
-	margin-left: 3%;
-	margin-top: 3px;
-	margin-bottom: 3px;
+#Botoes{
+	float: right;
+	width: 90vh;
+	padding: 9vh;
 }
 
-.corpo{
-	background-color: beige;
-	background-size: 100%;
+#Botoes a{
+	font-size: 2vh;
+	padding: 1%;
+	margin-right: 8vh;
+	border: 1px solid black;
+	transition-delay: 200ms;
+	border-radius: 3px;
+}
+#Burger{
+	display: none;
+	float: right;
+	margin-right: 8vh;
+}
+#Botoes a:hover{
+	transition-delay: 200ms;
+	border-radius: 10px;
 }
 
-.tabs{
-	background-color: brown;
-}
+@media screen and (max-width: 954px){
+	#Botoes{
+		display: none;
+	}
+	#Burger{
+		margin-top: 7vh;
+		display: flex;
+		flex-direction: column;
+		transition: transform 0.5s ease;
+		transform: rotate(0deg);
+	}
+	#Burger div{
+		height: 8px;
+		width: 35px;
+		background-color: black;
+		margin: 3px;
+	}
+	.burger-active{
+		transform: rotate(90deg);
+		transition: transform 0.5s ease;
+	}
 
-#menu{
-	color: white;
-	font-family: sans-serif;
 }
-
-.titulo{
-	color: black;
-	font-family: sans-serif;
-    padding: 5px;
-    height: 2em;
-    font-size: 1em;
-    background-color: rgba(203, 223, 149, 0.5)
-}
-
-.hero-bodyy{
-    margin-top: 5%;
-    border-style: solid;
-    border-left-style: none;
-    border-right-style: none;
-    border-color: black;
-	border-top-color: white;
-	font-family: sans-serif;
-}
-<<<<<<< HEAD
-
-     
-
-=======
-img{
-	width: 100%;
-	height: 100%;
-}
->>>>>>> b984d6a3b50b23c291a607a0f839433741eb0a83
