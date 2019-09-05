@@ -21,6 +21,20 @@ body{
     margin-top: 7%;
 }
 
+.menuitems{
+    display: inline-block;
+    color:white;
+    font-size: 22px;
+    text-decoration: none;
+    margin-left: 140px;
+}
+
+#sessoes{
+    position: sticky;
+    display: inline-block;
+    padding: 2%;
+}
+
 #logo{
     float:left;
     margin-left: 1.1%;
