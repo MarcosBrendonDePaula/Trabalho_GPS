@@ -1,0 +1,70 @@
+*,all,body{
+  margin:0;
+}
+
+body{
+    font-family: 'Amaranth', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top:0;
+    left:0;
+    z-index:10;
+    background-color: brown;
+    height: 88px;
+    width: 100%;
+}
+
+body{
+    background-color: beige;
+    margin-top: 7%;
+}
+
+#logo{
+    float:left;
+    margin-left: 1.1%;
+    width: 230px;
+    height: 138px;
+}
+
+#login{
+    border: 2px solid black;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 15%;
+    margin-bottom: 20%;
+}
+
+#user{
+    text-align: center;
+    margin-top: 10%;
+}
+
+#senha{
+    text-align: center;
+    margin-top: 10px;
+}
+
+#logar{
+    text-align: center;
+    margin-top: 12px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+
+#esqueci{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.img{
+    width: 300px;
+    height: 400px;
+}
+
+.Rodape {
+    text-align: center;
+    font-size: 8px;
+}
+
