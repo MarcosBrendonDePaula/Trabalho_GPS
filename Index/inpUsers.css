@@ -1,0 +1,13 @@
+div{
+    border: 1px solid black;
+    height: 800px;
+}
+div h1{
+    text-align: center;
+}
+table{
+    margin: auto;
+}
+.campo{
+    width: 350px;
+}
