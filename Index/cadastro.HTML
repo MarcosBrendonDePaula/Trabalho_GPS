@@ -24,14 +24,14 @@
     <!------------------------------------------------Container FLEX do form de Cadastro---------------------------->
     <div id="cadastro-container">
         <form id="cadastro" action="RecevDados.php" method="post">
-            <!----------------------------------Nome--------------------------------------->
+            <!----------------------------------Nome & Sobrenome--------------------------------------->
             <div>
                 <label style="margin-left: 5vh;" for="Nome">Nome:</label>
                 <input style="margin-left: 1vh; margin-right: 4vh; width: 16vh; border-radius: 6px;" type="text" name="Nome" placeholder="Nome">
                 <label>Sobrenome:</label>
                 <input style="width: 36vh; border-radius: 6px;" type="text"name="Sobrenome" placeholder="Sobrenome">
             </div>
-            <!----------------------------------Sobrenome--------------------------------------->
+            <!----------------------------------Data Nascimento--------------------------------------->
             <div style="margin-left: 5vh; display:inline-block">
                     <label for="Nascimento">Data de Nascimento: </label>
                     <input style="border-radius: 6px;" type="text" name="dia" size="2" maxlength="2" placeholder="DD">
@@ -60,7 +60,7 @@
            </div>
            <!----------------------------------Button de Cadastrar----------------------------------------------->
            <div style="display: inline-block;">
-                <button id="Button-Cad">Cadastrar</button>
+                <button id="Button-Cad" name="registro">Cadastrar</button>
             </div>
         </form>
     </div>
