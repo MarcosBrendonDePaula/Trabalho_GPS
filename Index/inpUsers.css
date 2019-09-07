@@ -1,13 +1,26 @@
+*{
+	margin: 0;
+}
 div{
+	background-image: url("https://cdn.iset.io/assets/54852/produtos/89/pn0028.jpg");
+	font-family: 'Amaranth', sans-serif;
     border: 1px solid black;
-    height: 800px;
+    height: 1000px;
 }
 div h1{
     text-align: center;
 }
 table{
     margin: auto;
+	background-color: White;
 }
 .campo{
+	text-align: center;
     width: 350px;
+}
+.senha{
+	color: white;
+}
+.senha:hover{
+	color: black;
 }
