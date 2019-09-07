@@ -97,3 +97,46 @@ figcaption{
     color:black;
 }
 
+/*Configs do CONTAINER FLEX*/
+#cadastro-container{
+    display:flex;
+    width: 100%;
+    margin-top: 0.5vh;
+    margin-bottom: 1vh;
+    justify-content: center;
+}
+
+/*Configs do FORM*/
+#cadastro{
+    height: 70vh;
+    width: 90vh;
+    background-color: #fff;
+    text-align: justify;
+    border: 2px solid #312e43;
+    border-radius: 8px;
+}
+
+/*Ajuste das DIVs dentro do FORM*/
+#cadastro div{
+    margin-top: 8vh;
+}
+
+/*Classe dos inputs do EMAIL & SENHA*/
+.normal{
+    margin-top:1vh;
+    height: 3vh;
+    width: 50vh;
+    border-radius: 6px;
+}
+
+/*ID do botão de cadastro*/
+#Button-Cad{
+    margin-left: 33vh; 
+    background-color: #1c0b19;
+    width: 120px; 
+    height: 40px;
+    border-radius: 5px;
+    border:none;
+    color:white;
+}
+
