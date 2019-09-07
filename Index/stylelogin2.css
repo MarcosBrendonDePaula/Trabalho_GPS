@@ -123,5 +123,7 @@ nav{
 #btnlog{
 	width:100px;
 	height:25px;
-	border-radius: 20px;
+      border-radius: 10px;
+      background-color:#1c0b19;
+      color:white;
 }
