@@ -1,51 +1,75 @@
-*,all,body{
+*,html,body{
   margin:0;
 }
 body{
     font-family: 'Amaranth', sans-serif;
-}
-nav{
-    position: fixed;
-    top:0;
-    left:0;
-    z-index:10;
-    background-color: brown;
-    height: 88px;
-    width: 100%;
-}
-body{
+    background-image: url("imagens/fundo.jpg");
+    background-repeat: repeat-x;
     background-color: beige;
-    margin-top: 7%;
 }
 
-p{
-    text-align: justify;
-    font-size: 130%;
+header div{
+    display: flex;
+    height: 88px;
+    justify-content: flex-end;
+    align-items: center;
+}
+header div a{
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+    border: 2px solid white;
+    padding: 1.5vh;
+    border-radius: 10px;
+    background-color: white;
+
+}
+#log{
+    margin-right: 10vh;
+}
+#cad{
+    margin-right: 10vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 88px;
+    width: 60%;
+    float:left;
 }
 
 .menuitems{
     display: inline-block;
     color:white;
-    font-size: 22px;
+    font-size: 18px;
     text-decoration: none;
-    margin-left: 140px;
+    margin-left: 9vh;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 4px;
 }
 
-#sessoes{
-    position: sticky;
-    display: inline-block;
-    padding: 2%;
+#block1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 580px;
+}
+
+#feitos{
+    font-style: italic;
+    text-align: center;
+    padding: 1em;
+    margin-top: 1%;
+    color:black;
 }
 
 #logo{
-    float:left;
     margin-left: 1.1%;
     width: 230px;
     height: 200px;
-}
-
-#bloco1{
-    padding: 4%;
 }
 
 figure {
@@ -62,21 +86,13 @@ figure {
     width: 300px;
     height: 400px;
 }
-#feitos{
-    font-style: italic;
-    text-align: center;
-    padding: 1em;
-    margin-top: 1%;
-}
+
 figcaption{
     font-size: 130%;
 }
 .Rodape {
     text-align: center;
     font-size: 8px;
+    color:black;
 }
 
-#teste{
-    width: 1349px;
-    height: 400px;
-}
