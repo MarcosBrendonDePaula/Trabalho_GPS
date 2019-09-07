@@ -87,9 +87,6 @@ nav{
     margin: 10vh auto;
     background-color: #fff;
 }
-#login a{
-    text-decoration: none;
-}
 #user{
     text-align: center;
     margin-top: 10%;
@@ -103,11 +100,26 @@ nav{
 #logar{
     text-align: center;
     margin-top: 12px;
-    margin-left: 200px;
     margin-bottom: 20px;
 }
 
 #esqueci{
     text-align: center;
     margin-top: 10px;
+}
+#TxtEmail{
+	width:50%;
+	border-radius: 10px;
+}
+#txtsenha{
+	width:50%;
+	border-radius: 10px;
+}
+#MiniRodaPe{
+	text-align: center;
+}
+#btnlog{
+	width:100px;
+	height:25px;
+	border-radius: 20px;
 }
