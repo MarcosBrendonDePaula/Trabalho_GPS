@@ -24,7 +24,7 @@
 						<td class="campo"><?php echo $dados["ID"]; ?></td>
 						<td class="campo"><?php echo $dados["Nome"]; ?></td>
 						<td class="campo"><?php echo $dados["Email"]; ?></td>
-						<td class="campo"><?php echo $dados["Senha"]; ?></td>
+						<td class="campo senha"><?php echo $dados["Senha"]; ?></td>
 					</tr>
 			<?php } ?>
         </table>
