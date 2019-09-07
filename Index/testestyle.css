@@ -4,8 +4,9 @@
 body{
     font-family: 'Amaranth', sans-serif;
     background-image: url("imagens/fundo.jpg");
-    background-repeat: repeat-x;
+    background-repeat: no-repeat;
     background-color: beige;
+    background-size: 1400px 670px;
 }
 
 header div{
