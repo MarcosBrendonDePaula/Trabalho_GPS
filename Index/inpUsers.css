@@ -9,5 +9,6 @@ table{
     margin: auto;
 }
 .campo{
+	text-align: center;
     width: 350px;
 }

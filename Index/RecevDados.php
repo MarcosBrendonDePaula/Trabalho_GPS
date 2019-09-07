@@ -1,6 +1,8 @@
 <?php
 	function Command($banco,$dados){
 		sqlCmd($banco,$dados["Comando"]);
+		
+		header("Location: Executor.html");
 	}
 	
 	function Logar($banco,$login,$senha){

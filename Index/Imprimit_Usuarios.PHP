@@ -13,10 +13,10 @@
 		<h1>Lista de Cadastros Efetuados</h1>
         <table border="2">
             <tr>
-                <td class="campo">ID:</td>
-                <td class="campo">Nome:</td>
-                <td class="campo">Email:</td>
-                <td class="campo">Senha:</td>
+                <td class="campo">ID</td>
+                <td class="campo">Nome</td>
+                <td class="campo">Email</td>
+                <td class="campo">Senha</td>
             </tr>
             <?php 
 				while($dados = sqlGet($tuplas)){ ?>
