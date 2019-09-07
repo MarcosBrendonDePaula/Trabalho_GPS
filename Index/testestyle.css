@@ -51,6 +51,7 @@ nav{
     padding: 4px;
 }
 
+/*div ate onde vai a imagem de fundo*/
 #block1{
     display: flex;
     justify-content: center;
