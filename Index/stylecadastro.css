@@ -91,10 +91,17 @@ figure {
 figcaption{
     font-size: 130%;
 }
-.Rodape {
-    text-align: center;
-    font-size: 8px;
-    color:black;
+
+#Rodape {
+    position: fixed;
+    bottom:0;
+    right: 0;
+    left: 0;
+    font-size: 7px;
+    font-style: arial;
+    color:white;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: right;    
 }
 
 /*Configs do CONTAINER FLEX*/

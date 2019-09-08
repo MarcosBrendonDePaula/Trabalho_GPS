@@ -21,8 +21,15 @@
             <a href="cadastro.html" id="cad">Cadastrar-se</a>
         </div>   
     </header>
+
+    
+
     <form id = 'login' action="RecevDados.php" method="post">
   
+            <div id = 'login_n_existe'> 
+                <p id = 'login_n_existe'> <strong >Usuário ou Senha Errado!</strong></p>  
+            </div>
+
             <div id = 'user'>
                     <p>Usuário</p>
                     <input id="TxtEmail" type = 'text' placeholder="Email" name="Uusuario">
