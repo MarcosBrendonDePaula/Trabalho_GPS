@@ -23,8 +23,10 @@
 	}
 	
 	function Registrar($banco,$et){
-		$RegistroEntradas="(\"".$et['Usuario']."\"".","."\"".$et['Senha']."\"".","."\"".$et['Email']."\")";
-		sqlCmd($banco,"INSERT INTO usuario(Nome,Senha,Email) VALUES ".$RegistroEntradas);
+		$RegistroEntradas="(\"".$et['Nome']." ".$et['Sobrenome']."\"".","."\"".$et['Senha']."\"".","."\"".$et['Email']."\")";
+		var_dump($RegistroEntradas);
+		sqlCmd($banco,"INSERT INTO `usuario` (`Nome`,`Senha`,`Email`) VALUES ".$RegistroEntradas);
+		header("Location: teste.html");
 	}
 	
 	include("modulos/conexao.php");

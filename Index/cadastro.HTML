@@ -31,18 +31,6 @@
                 <label>Sobrenome:</label>
                 <input style="width: 36vh; border-radius: 6px;" type="text"name="Sobrenome" placeholder="Sobrenome">
             </div>
-            <!----------------------------------Data Nascimento--------------------------------------->
-            <div style="margin-left: 5vh; display:inline-block">
-                    <label for="Nascimento">Data de Nascimento: </label>
-                    <input style="border-radius: 6px;" type="text" name="dia" size="2" maxlength="2" placeholder="DD">
-                    <input style="border-radius: 6px;" type="text" name="mes" size="2" maxlength="2" placeholder="MM">
-                    <input style="border-radius: 6px;" type="text" name="ano" size="4" maxlength="4" placeholder="AAAA">
-            </div>
-            <!----------------------------------CPF--------------------------------------->
-            <div style="text-align: justify; margin-left: 6vh; display: inline-block;">
-                    <label for="CPF">CPF: </label>
-                    <input style="border-radius: 6px;" type="text" name="CPF" placeholder="000.000.000-98">
-            </div>
             <!----------------------------------Email--------------------------------------->
             <div>
                 <label style="margin-left: 5vh;" for="Email">Email:</label>
@@ -59,6 +47,7 @@
                <a style="color:#3f546e;" href="">Aceito os termos de uso</a>
            </div>
            <!----------------------------------Button de Cadastrar----------------------------------------------->
+			<input style="display: none;" name="Mode" value="registro" >
            <div style="display: inline-block;">
                 <button id="Button-Cad" name="registro">Cadastrar</button>
             </div>

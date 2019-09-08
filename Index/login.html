@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylelogin.css">
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Amaranth&display=swap');
+    </style> 
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <title>Simple Cake</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo1.png" id="logo">
+            <div id="sessoes">
+                <a  href="teste.html" class="menuitems"> Home</a>
+                <a  href="teste.html" class="menuitems"> Quem somos nós</a>
+                <a  href="teste.html" class="menuitems"> Monte seu Bolo</a>
+                <a  href="teste.html" class="menuitems"> Galeria</a>     
+            </div>
+        </nav>
+    </header>
+
+    <form id = 'login' action="RecevDados.php" method="post">
+  
+        <div id = 'user'>
+                <p>Usuário</p>
+                <input id="TxtEmail" type = 'text' placeholder="Usuário" name="Uusuario">
+        </div>
+          
+        <div id = 'senha'>
+                <p>Senha</p>
+                <input id="txtsenha" type = 'password' placeholder="Senha" name="Usenha">
+				<input style="display: none;" type = 'text' name="Mode" value="login">
+        </div>
+
+        <div id ='esqueci'>
+                lembrar-me
+                <input type="checkbox" name="lembrar-me">
+                <br>
+                <a href="">Esqueci minha senha</a>
+        </div>
+
+        <div id ='logar'>
+                <input id="btnlog" type = 'submit' name = 'login' value=  "Login"></input>
+        </div>
+
+        <div id="MiniRodaPe">
+                Não possui um cadastro? <a href="">Cadastre-se agora</a>
+        </div>
+
+    </form>
+    <script type="text/javascript" src="autentication.js"></script>
+</body>
+
+<footer class = "Rodape">
+    <div class = "container ">
+        <h1 class = "contatouro">Email: SimpleCake@simplecake.com</h1>
+        <h1 class = "contatouro">Telefone: 4002-8922</h1>
+        <h1 class = "contatouro">Endereço: 221B Baker Street, London</h1>
+        <h1 class = "contatouro">CNPJ: 27.458.347/0001-39</h1>
+        <h2 class = "Subtitle"> <a href = "index.html"> www.SimpleCake.com.br</a></h2>
+    </div>
+</footer>
+</html>
