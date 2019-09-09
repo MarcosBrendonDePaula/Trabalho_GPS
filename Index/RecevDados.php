@@ -10,7 +10,7 @@
 		$secao = sqlCmd($banco,"SELECT * FROM `usuario` where Email like '".$login."'");	
 		while($atual=sqlGet($secao)){
 			if(strcasecmp($atual['Senha'],$senha)==0){
-				echo "<h1>!Logado!</h1>";
+				header("Location: testeLogado.html");
 				return;
 			}
 			else{
