@@ -31,6 +31,8 @@
 	
 	include("modulos/conexao.php");
 	$db = Connect("127.0.0.1","root","vertrigo","site");
+	mysql_set_charset('utf8',$db);
+
 	if(strcasecmp($_POST['Mode'],"Comando")==0){
 		Command($db,$_POST);
 	}
