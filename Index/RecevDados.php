@@ -14,11 +14,11 @@
 				return;
 			}
 			else{
-				echo "<h1>!Senha ou Email Errado!</h1>";
+				header("Location: login_errado.html");
 				return;
 			}
 		}
-		echo "<h1>!Senha ou Email Errado!</h1>";
+		header("Location: login_errado.html");
 		return;
 	}
 	
