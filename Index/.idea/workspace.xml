@@ -34,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -59,6 +60,7 @@
       <updated>1567623708321</updated>
       <workItem from="1567623713264" duration="604000" />
       <workItem from="1567790299450" duration="6600000" />
+      <workItem from="1568669478646" duration="355000" />
     </task>
     <servers />
   </component>

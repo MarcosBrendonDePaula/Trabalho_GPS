@@ -1,4 +1,5 @@
 <?php
+	
 	function Command($banco,$dados){
 		sqlCmd($banco,$dados["Comando"]);
 		
@@ -10,7 +11,7 @@
 		$secao = sqlCmd($banco,"SELECT * FROM `usuario` where Email like '".$login."'");	
 		while($atual=sqlGet($secao)){
 			if(strcasecmp($atual['Senha'],$senha)==0){
-				header("Location: testeLogado.html");
+				echo "<h1>!Logado!</h1>";
 				return;
 			}
 			else{
@@ -31,7 +32,6 @@
 	
 	include("modulos/conexao.php");
 	$db = Connect("127.0.0.1","root","vertrigo","site");
-
 	if(strcasecmp($_POST['Mode'],"Comando")==0){
 		Command($db,$_POST);
 	}
@@ -42,4 +42,13 @@
 		var_dump($_POST);
 		Registrar($db,$_POST);
 	}
+	if(strcasecmp($_POST['Mode'],"foto")==0){
+		var_dump($_POST);
+		var_dump($_FILES);
+		$uploaddir = './fotos/';
+		$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
+		if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile))
+			echo "Arquivo válido e enviado com sucesso.\n";
+	}
+	
 ?>
