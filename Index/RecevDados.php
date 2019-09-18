@@ -1,5 +1,4 @@
 <?php
-	
 	function Command($banco,$dados){
 		sqlCmd($banco,$dados["Comando"]);
 		
@@ -31,11 +30,8 @@
 	}
 	function RegistroVaga($banco,$et,$fotoId){
 		$RegistroEntradas="(\"".$et['Nome']." ".$et['Sobrenome']."\"".","."\"".$et['Senha']."\"".","."\"".$et['Email']."\"".","."\"".$fotoId."\")";
-		var_dump($et);
-		var_dump($fotoId);
-		var_dump($RegistroEntradas);
 		sqlCmd($banco,"INSERT INTO `usuario` (`Nome`,`Senha`,`Email`,`FotoId`) VALUES ".$RegistroEntradas);
-		
+		header("Location: teste.html");
 	}
 	include("modulos/conexao.php");
 	$db = Connect("127.0.0.1","root","vertrigo","site");

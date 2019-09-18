@@ -26,7 +26,11 @@
 						<td class="campo"><?php echo $dados["Nome"]; ?></td>
 						<td class="campo"><?php echo $dados["Email"]; ?></td>
 						<td class="campo senha"><?php echo $dados["Senha"]; ?></td>
-						<td class="campo"><img style="width:100%;height:100%;" src="<?php echo "/fotos/".$dados["FotoId"]; ?>"></td>
+						<td class="campo">
+							<div>
+								<img style="width:100%;height:100%;" src="<?php echo "/fotos/".$dados["FotoId"]; ?>">
+							</div>
+						</td>
 					</tr>
 			<?php } ?>
         </table>
