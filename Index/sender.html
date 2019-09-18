@@ -1,10 +1,65 @@
-<html>	
-	<div style="border:3px solid black;display: inline-block;">
-		<form enctype="multipart/form-data" action="RecevDados.php" method="POST">
-			<input type="hidden" name="Mode" value="foto"/>
-			Enviar esse arquivo: <input name="userfile" type="file" />
-			<br/>
-			<input type="submit" value="Enviar arquivo" />
-		</form>
-	</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylecadastro.css">
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Amaranth&display=swap');
+    </style> 
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <title>Simple Cake</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a  href="teste.html" class="menuitems"> Home</a>
+            <a  href="teste.html" class="menuitems"> Quem somos nós</a>
+            <a  href="teste.html" class="menuitems"> Monte seu Bolo</a>
+            <a  href="teste.html" class="menuitems"> Galeria</a>      
+        </nav>
+        <div>
+            <a href="login2.html" id="log">Login</a>
+            <a href="teste.html" id="cad">Cadastrar-se</a>
+        </div>   
+    </header>
+    <!------------------------------------------------Container FLEX do form de Cadastro---------------------------->
+    <div id="cadastro-container">
+        <form id="cadastro" enctype="multipart/form-data" action="RecevDados.php" method="post">
+            <!----------------------------------Nome & Sobrenome--------------------------------------->
+            <div>
+                <label style="margin-left: 5vh;" for="Nome">Nome:</label>
+                <input style="margin-left: 1vh; margin-right: 4vh; width: 16vh; border-radius: 6px;" type="text" name="Nome" placeholder="Nome">
+                <label>Sobrenome:</label>
+                <input style="width: 36vh; border-radius: 6px;" type="text"name="Sobrenome" placeholder="Sobrenome">
+            </div>
+            <!----------------------------------Email--------------------------------------->
+            <div>
+                <label style="margin-left: 5vh;" for="Email">Email:</label>
+                <input style="margin-left: 0.5vh;" class="normal" type="text" name="Email" placeholder="person123@outlook.com">
+            </div>
+            <!----------------------------------Senha--------------------------------------->
+            <div>
+                <label style="margin-left: 5vh;" for="Senha">Senha:</label>
+                <input class="normal" type="text" name="Senha" placeholder="Senha">
+            </div>
+            <!----------------------------------Checkbox de Aceitar os termos de Uso------------------------------------>
+           <div style="display: inline-block;">
+               <input style="margin-left: 6vh;"type="checkbox" name="Aceitar">
+               <a style="color:#3f546e;" href="">Aceito os termos de uso</a>
+           </div>
+		   <div>
+				<input type="hidden" name="Mode" value="foto"/>
+				<input name="userfile" type="file" />
+		   </div>
+           <!----------------------------------Button de Cadastrar----------------------------------------------->
+           <div style="display: inline-block;">
+                <button id="Button-Cad" name="registro">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+<footer id = 'Rodape'>
+    <h1> <em>Termos de uso &nbsp;&nbsp;&nbsp;&nbsp; Privacidade e cookies </em></h1>
+</footer>
+
 </html>

@@ -29,7 +29,14 @@
 		sqlCmd($banco,"INSERT INTO `usuario` (`Nome`,`Senha`,`Email`) VALUES ".$RegistroEntradas);
 		header("Location: teste.html");
 	}
-	
+	function RegistroVaga($banco,$et,$fotoId){
+		$RegistroEntradas="(\"".$et['Nome']." ".$et['Sobrenome']."\"".","."\"".$et['Senha']."\"".","."\"".$et['Email']."\"".","."\"".$fotoId."\")";
+		var_dump($et);
+		var_dump($fotoId);
+		var_dump($RegistroEntradas);
+		sqlCmd($banco,"INSERT INTO `usuario` (`Nome`,`Senha`,`Email`,`FotoId`) VALUES ".$RegistroEntradas);
+		
+	}
 	include("modulos/conexao.php");
 	$db = Connect("127.0.0.1","root","vertrigo","site");
 	if(strcasecmp($_POST['Mode'],"Comando")==0){
@@ -43,12 +50,10 @@
 		Registrar($db,$_POST);
 	}
 	if(strcasecmp($_POST['Mode'],"foto")==0){
-		var_dump($_POST);
-		var_dump($_FILES);
 		$uploaddir = './fotos/';
 		$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 		if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile))
-			echo "Arquivo válido e enviado com sucesso.\n";
+			RegistroVaga($db,$_POST,$_FILES['userfile']['name']);
 	}
 	
 ?>
