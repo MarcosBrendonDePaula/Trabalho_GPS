@@ -7,6 +7,7 @@ body{
     background-repeat: no-repeat;
     background-color: beige;
     background-size: 1400px 670px;
+    color:#3a3a27;
 }
 
 header div{
@@ -65,7 +66,7 @@ nav{
     text-align: center;
     padding: 1em;
     margin-top: 1%;
-    color:black;
+    color:#3a3a27;
 }
 
 #logo{
@@ -78,7 +79,8 @@ figure {
     float: left;
     width: 30%;
     text-align: center;
-    border: thin #D3D3D3 solid; 
+    /* border: thin #D3D3D3 solid;  */
+    border: thin solid #3a3a27;
     margin: 0.2em;
     margin-left: 0.5%;
     padding: 1em;
@@ -91,6 +93,27 @@ figure {
 
 figcaption{
     font-size: 130%;
+}
+#job-section{
+    display: flex;
+    width: 100%;
+    /* height: 50vh; */
+    /* background-color: #474838;  pode ser esse */
+    background-color:#3a3a27 ;
+    margin-top: 0.6vh;
+    /* border-top: 3px solid black; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color:white;
+}
+#explanation{
+    width: 185vh;
+    height: 40vh;
+    background-color: #474838;
+    /* background-color: white; */
+    margin-left: 10vh;
+    margin-bottom: 2vh;
 }
 .Rodape {
     text-align: center;
