@@ -31,7 +31,8 @@
 	function RegistroVaga($banco,$et,$fotoId){
 		$RegistroEntradas="(\"".$et['Nome']." ".$et['Sobrenome']."\"".","."\"".$et['Senha']."\"".","."\"".$et['Email']."\"".","."\"".$fotoId."\")";
 		sqlCmd($banco,"INSERT INTO `usuario` (`Nome`,`Senha`,`Email`,`FotoId`) VALUES ".$RegistroEntradas);
-		header("Location: teste.html");
+		$uId = sqlCmd($banco,"SELECT * FROM `usuario` where Email = '".$et['Email']."'");
+		sqlCmd($banco,"");
 	}
 	include("modulos/conexao.php");
 	$db = Connect("127.0.0.1","root","vertrigo","site");
