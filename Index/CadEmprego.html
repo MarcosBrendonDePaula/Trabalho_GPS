@@ -27,7 +27,7 @@
         <div id="cadastro-container">
             <h2 style="color:white; text-align: center; margin-top: 2vh;">CADASTRE SEU CURRÍCULO</h2>
             <p style="color:white; text-align:center;">Informe os dados abaixo e tenha a oportunidade de trabalhar conosco</p>
-            <form id="cadastro-form">
+            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post">
                 <!-----------------------------------------Nome------------------------------------------------>
                 <div class="entradas-form"> 
                     <label for="nome">Nome</label> <br>
@@ -106,11 +106,11 @@
                 <!-----------------------------------------Foto de perfil------------------------------------------------>
                 <div class="entradas-form">
                         <label for="">Anexe sua foto de Perfil</label><br>
-                        <input type="file" name="Foto">
+                        <input type="file" name="userfile">
                 </div>
                 <!--Marcos PEDIU-->
                 <div class="entradas-form">
-                    <input type="hidden" name="Mode" value="foto">
+                    <input type="hidden" name="Mode" value="CadCu">
                 </div>
                 <div class="entradas-form">
                     <input type="hidden" name="Senha">
