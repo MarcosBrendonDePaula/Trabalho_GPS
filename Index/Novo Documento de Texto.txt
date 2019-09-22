@@ -1,0 +1,11 @@
+	function Registrar($banco,$et){
+		$RegistroEntradas="(\"".$et['Nome']." ".$et['Sobrenome']."\"".","."\"".$et['Senha']."\"".","."\"".$et['Email']."\")";
+		var_dump($RegistroEntradas);
+		sqlCmd($banco,"INSERT INTO `curriculo`(`Nome`, `Endereco`, `Email`, `Cpf`, `Foto`, `Sexo`, `Curriculo`, `Idade`, `ID`) VALUES ".$RegistroEntradas);
+	}
+	function RegistroVaga($banco,$et,$fotoId){
+		$RegistroEntradas="(\"".$et['Nome']."\"".",\"".$et['Endereco']."\"".",\"".$et['Email']."\"".","."\"".$et['Email']/."\"".$fotoId."\"".",\"".$et['sexo']."\","."\"".$et['Curriculo']."\",".$et['Idade'].")";
+		var_dump($RegistroEntradas);
+		sqlCmd($banco,"INSERT INTO `usuario` (`Nome`,`Senha`,`Email`,`FotoId`) VALUES ".$RegistroEntradas);
+		$uId = sqlCmd($banco,"SELECT * FROM `usuario` where Email = '".$et['Email']."'");
+	}

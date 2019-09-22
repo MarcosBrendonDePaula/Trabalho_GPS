@@ -10,7 +10,8 @@ body{
     background-repeat: repeat;
     background-color: beige;
     background-size: 1400px 670px;
-    height: 10px;
+    /*Para tirar o scroll gigante*/
+    overflow-y: hidden;
 }
 
 
@@ -49,7 +50,7 @@ h2 a{
 }
 
 .flex-container img{
-    border: 1.5px solid white;
+    border: 2px solid white;
     border-radius: 1.5px;
 }
 
@@ -59,17 +60,15 @@ h2 a{
 
 .min{
     width: 200px;
-    padding: 10px;
+    /*padding: 10px;*/
 }
 
 .lightbox{
-    display: none;
     visibility: hidden;
     opacity: 0;
 }
 
 .lightbox:target{
-    display: block;
     opacity: 1;
     visibility: visible;
     width: 100%;
@@ -77,8 +76,15 @@ h2 a{
     top: 0;
     left: 0;
     background: rgba(10, 10, 10, 0.7);
-
+    text-align: center;
     position: fixed;
+}
+
+.lightbox:target img{
+    /*tentando centralizar a imagem do lightbox*/
+    margin-right: 135px;
+    border: 1.5px solid white;
+    border-radius: 2px;
 }
 
 .box_img{
@@ -115,13 +121,31 @@ h2 a{
 
 #close{
     top: 2%;
-    right: 18%;
+    right: 15%;
     padding-bottom: 10px;
 }
 
-#close_galery{
-    top: 13%;
-    right: 16%;
+#compartilhar{
+    position: absolute;
+    color: white;
+    top: 25%;
+    left: 13%;
+}
+
+#facebook_logo{
+    left: 14%;
+    top: 32%;
+    background-image: url("galeria/face.jpg");
+    border: 1.5px solid white;
+    border-radius: 2px;
+}
+
+#twitter_logo{
+    left: 14%;
+    top: 45%;
+    background-image: url("galeria/twitter.png");
+    border: 1.5px solid white;
+    border-radius: 2px;
 }
 
 .box_img img{

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<head>
+    <link rel="stylesheet" href="StyleCadEmprego.css">
+    <style>
+            @import url('https://fonts.googleapis.com/css?family=Amaranth&display=swap');
+    </style> 
+    <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <title>Simple Cake</title>
+</head>
+<!--Comentario -->
+<body>
+    <header>
+        <nav>
+            <a  href="teste.html" class="menuitems"> Home</a>
+            <a  href="teste.html" class="menuitems"> Quem somos nós</a>
+            <a  href="teste.html" class="menuitems"> Monte seu Bolo</a>
+            <a  href="galeria.html" class="menuitems"> Galeria</a>      
+        </nav>
+        <div>
+            <a href="login2.html" id="log">Login</a>
+            <a href="cadastro.html" id="cad">Cadastrar-se</a>
+        </div>   
+    </header>
+    <div id="block-cadastro">
+        <div id="cadastro-container">
+            <h2 style="color:white; text-align: center; margin-top: 2vh;">CADASTRE SEU CURRÍCULO</h2>
+            <p style="color:white; text-align:center;">Informe os dados abaixo e tenha a oportunidade de trabalhar conosco</p>
+            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post">
+                <!-----------------------------------------Nome------------------------------------------------>
+                <div class="entradas-form"> 
+                    <label for="nome">Nome</label> <br>
+                    <input type="text" style="width: 70vh; height: 4vh;" name="Nome">  
+                </div>
+                <!-----------------------------------------CPF------------------------------------------------>
+                <div class="entradas-form"> 
+                    <label for="cpf">CPF</label> <br>
+                    <input type="text" style="width: 30vh; height: 4vh;" placeholder="000.000.000-01" name="CPF">  
+                </div>
+                <!-----------------------------------------Endereço------------------------------------------------>
+                <div class="entradas-form"> 
+                    <label for="endereco">Endereço</label> <br>
+                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="Digite seu endereço" name="Endereco">  
+                </div>
+                <!-----------------------------------------Sexo------------------------------------------------>
+                <div class="entradas-form"> 
+                    <label for="sexo">Sexo</label> <br>
+                    <select name="sexo" id="">
+                        <option value="M">Masculino</option>
+                        <option value="F">Feminino</option>
+                        <option value="O">Outro</option>
+                    </select>
+                </div>
+                <!-----------------------------------------Email------------------------------------------------>
+                <div class="entradas-form"> 
+                    <label for="email">Email</label> <br>
+                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="exemplo@gmail.com" name="Email">  
+                </div>
+                <!-----------------------------------------Idade------------------------------------------------>
+                <div class="entradas-form">
+                    <label for="idade">Idade</label><br>
+                    <select name="Idade" id="">
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">38</option>
+                        <option value="39">39</option>
+                        <option value="40">40</option>
+                        <option value="41">41</option>
+                        <option value="42">42</option>
+                        <option value="43">43</option>
+                        <option value="44">44</option>
+                        <option value="45">45</option>
+                        <option value="46">46</option>
+                        <option value="47">47</option>
+                        <option value="48">48</option>
+                        <option value="49">49</option>
+                        <option value="50">50</option>
+                    </select>
+                </div>
+                <!-----------------------------------------Curriculo------------------------------------------------>
+                <div class="entradas-form">
+                    <label for="curr">Currículo Profissional</label> <br>
+                    <textarea name="Curriculo" id="" cols="85" rows="30" maxlength="10000" style="resize: none; border-radius: 5px;"></textarea>
+                </div>
+                <!-----------------------------------------Foto de perfil------------------------------------------------>
+                <div class="entradas-form">
+                        <label for="">Anexe sua foto de Perfil</label><br>
+                        <input type="file" name="userfile">
+                </div>
+                <!--Marcos PEDIU-->
+                <div class="entradas-form">
+                    <input type="hidden" name="Mode" value="CadCu">
+                </div>
+                <div class="entradas-form">
+                    <input type="hidden" name="Senha">
+                </div>
+                <!-----------------------------------------Button de ENVIAR------------------------------------------------>
+                <div class="entradas-form">
+                    <button style="height: 6vh; width: 20vh; margin-left: 20vh;" name="Enviar">Salvar & Enviar</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+
+<footer id = 'Rodape'>
+    <h1> <em>Termos de uso &nbsp;&nbsp;&nbsp;&nbsp; Privacidade e cookies </em></h1>
+</footer>
+
+</html>

@@ -29,8 +29,9 @@
 		header("Location: teste.html");
 	}
 	function RegistroVaga($banco,$et,$fotoId){
-		$RegistroEntradas="(\"".$et['Nome']." ".$et['Sobrenome']."\"".","."\"".$et['Senha']."\"".","."\"".$et['Email']."\"".","."\"".$fotoId."\")";
-		sqlCmd($banco,"INSERT INTO `usuario` (`Nome`,`Senha`,`Email`,`FotoId`) VALUES ".$RegistroEntradas);
+		$RegistroEntradas="(\"".$et['Nome']."\"".",\"".$et['Endereco']."\"".",\"".$et['Email']."\"".","."\"".$et['CPF']."\",\"".$fotoId."\"".",\"".$et['sexo']."\","."\"".$et['Curriculo']."\",".$et['Idade'].")";
+		var_dump($RegistroEntradas);
+		sqlCmd($banco,"INSERT INTO `curriculo`(`Nome`, `Endereco`, `Email`, `Cpf`, `Foto`, `Sexo`, `Curriculo`, `Idade`) VALUES ".$RegistroEntradas);
 		header("Location: teste.html");
 	}
 	include("modulos/conexao.php");
@@ -45,7 +46,7 @@
 		var_dump($_POST);
 		Registrar($db,$_POST);
 	}
-	if(strcasecmp($_POST['Mode'],"foto")==0){
+	if(strcasecmp($_POST['Mode'],"CadCu")==0){
 		$uploaddir = './fotos/';
 		$uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 		if (move_uploaded_file($_FILES['userfile']['tmp_name'], $uploadfile))
