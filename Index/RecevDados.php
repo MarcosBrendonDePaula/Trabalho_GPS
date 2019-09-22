@@ -29,7 +29,7 @@
 		header("Location: teste.html");
 	}
 	function RegistroVaga($banco,$et,$fotoId){
-		$RegistroEntradas="(\"".$et['Nome']."\"".",\"".$et['Endereco']."\"".",\"".$et['Email']."\"".","."\"".$et['Email']."\",\"".$fotoId."\"".",\"".$et['sexo']."\","."\"".$et['Curriculo']."\",".$et['Idade'].")";
+		$RegistroEntradas="(\"".$et['Nome']."\"".",\"".$et['Endereco']."\"".",\"".$et['Email']."\"".","."\"".$et['CPF']."\",\"".$fotoId."\"".",\"".$et['sexo']."\","."\"".$et['Curriculo']."\",".$et['Idade'].")";
 		var_dump($RegistroEntradas);
 		sqlCmd($banco,"INSERT INTO `curriculo`(`Nome`, `Endereco`, `Email`, `Cpf`, `Foto`, `Sexo`, `Curriculo`, `Idade`) VALUES ".$RegistroEntradas);
 		header("Location: teste.html");
