@@ -27,21 +27,21 @@
         <div id="cadastro-container">
             <h2 style="color:white; text-align: center; margin-top: 2vh;">CADASTRE SEU CURRÍCULO</h2>
             <p style="color:white; text-align:center;">Informe os dados abaixo e tenha a oportunidade de trabalhar conosco</p>
-            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post">
+            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post" onsubmit="return false">
                 <!-----------------------------------------Nome------------------------------------------------>
                 <div class="entradas-form"> 
                     <label for="nome">Nome</label> <br>
-                    <input type="text" style="width: 70vh; height: 4vh;" name="Nome">  
+                    <input type="text" style="width: 70vh; height: 4vh;" name="Nome" id="nomee">  
                 </div>
                 <!-----------------------------------------CPF------------------------------------------------>
                 <div class="entradas-form"> 
                     <label for="cpf">CPF</label> <br>
-                    <input type="text" style="width: 30vh; height: 4vh;" placeholder="000.000.000-01" name="CPF">  
+                    <input type="text" style="width: 30vh; height: 4vh;" placeholder="000.000.000-10" name="CPF" id="cpff">  
                 </div>
                 <!-----------------------------------------Endereço------------------------------------------------>
                 <div class="entradas-form"> 
                     <label for="endereco">Endereço</label> <br>
-                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="Digite seu endereço" name="Endereco">  
+                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="Digite seu Endereço" name="Endereco" id="enderecoo">  
                 </div>
                 <!-----------------------------------------Sexo------------------------------------------------>
                 <div class="entradas-form"> 
@@ -55,7 +55,7 @@
                 <!-----------------------------------------Email------------------------------------------------>
                 <div class="entradas-form"> 
                     <label for="email">Email</label> <br>
-                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="exemplo@gmail.com" name="Email">  
+                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="exemplo@gmail.com" name="Email" id="emaill">  
                 </div>
                 <!-----------------------------------------Idade------------------------------------------------>
                 <div class="entradas-form">
@@ -101,7 +101,7 @@
                 <!-----------------------------------------Curriculo------------------------------------------------>
                 <div class="entradas-form">
                     <label for="curr">Currículo Profissional</label> <br>
-                    <textarea name="Curriculo" id="" cols="85" rows="30" maxlength="10000" style="resize: none; border-radius: 5px;"></textarea>
+                    <textarea name="Curriculo" id="curriculoo" cols="85" rows="30" maxlength="10000" style="resize: none; border-radius: 5px;"></textarea>
                 </div>
                 <!-----------------------------------------Foto de perfil------------------------------------------------>
                 <div class="entradas-form">
@@ -117,14 +117,14 @@
                 </div>
                 <!-----------------------------------------Button de ENVIAR------------------------------------------------>
                 <div class="entradas-form">
-                    <button style="height: 6vh; width: 20vh; margin-left: 20vh;" name="Enviar">Salvar & Enviar</button>
+                    <button style="height: 6vh; width: 20vh; margin-left: 20vh;" name="Enviar" onclick="verificador()">Salvar & Enviar</button>
                 </div>
 
             </form>
         </div>
     </div>
     
-    
+    <script src="cadEmprego.JS"></script>
 </body>
 
 <footer id = 'Rodape'>
