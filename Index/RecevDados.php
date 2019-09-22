@@ -32,6 +32,7 @@
 		$RegistroEntradas="(\"".$et['Nome']."\"".",\"".$et['Endereco']."\"".",\"".$et['Email']."\"".","."\"".$et['Email']."\",\"".$fotoId."\"".",\"".$et['sexo']."\","."\"".$et['Curriculo']."\",".$et['Idade'].")";
 		var_dump($RegistroEntradas);
 		sqlCmd($banco,"INSERT INTO `curriculo`(`Nome`, `Endereco`, `Email`, `Cpf`, `Foto`, `Sexo`, `Curriculo`, `Idade`) VALUES ".$RegistroEntradas);
+		header("Location: teste.html");
 	}
 	include("modulos/conexao.php");
 	$db = Connect("127.0.0.1","root","vertrigo","site");
