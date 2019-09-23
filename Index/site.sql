@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 18-Set-2019 às 02:37
+-- Generation Time: 23-Set-2019 às 20:14
 -- Versão do servidor: 5.7.25
 -- versão do PHP: 7.1.26
 
@@ -25,15 +25,28 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estrutura da tabela `curriculos`
+-- Estrutura da tabela `curriculo`
 --
 
-CREATE TABLE `curriculos` (
-  `UserId` int(11) DEFAULT NULL,
-  `Conteudo` longtext NOT NULL,
-  `Data` date DEFAULT NULL,
+CREATE TABLE `curriculo` (
+  `Nome` varchar(255) NOT NULL,
+  `Endereco` varchar(255) NOT NULL,
+  `Email` varchar(255) NOT NULL,
+  `Cpf` varchar(255) NOT NULL,
+  `Foto` varchar(255) NOT NULL,
+  `Sexo` varchar(255) NOT NULL,
+  `Curriculo` longtext NOT NULL,
+  `Idade` int(11) NOT NULL,
   `ID` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `curriculo`
+--
+
+INSERT INTO `curriculo` (`Nome`, `Endereco`, `Email`, `Cpf`, `Foto`, `Sexo`, `Curriculo`, `Idade`, `ID`) VALUES
+('Marcos Brendon', 'r incaio sutil de oliveira', 'nexgamer0@gmail.com', '11961176912', 'im1.jpg', 'M', 'ferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\nferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nadaferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nadaferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\n\r\nferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nadaferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\nferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\nferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nadaferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\n', 16, 4),
+('Adolf Augustinho', 'asdasdasdasdasd', 'teste@gmail.com', '159753214586', 'WIN_20190918_16_12_16_Pro.jpg', 'O', 'augustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvvvv\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvvaugustinho carrara\r\nEsasdasdsadsadasdvaugustinho carrara\r\nEsasdasdsadsadasdvvvaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd', 24, 5);
 
 -- --------------------------------------------------------
 
@@ -54,29 +67,25 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`Nome`, `Senha`, `Email`, `ID`, `FotoId`) VALUES
-('Marcos Brendon de paula Azevedo', 'Melissa5', 'nexgamer0@gmail.com', 13, 'semAvatar.png'),
-('Marcos brendon de paula', 'Melissa5', 'marcos15975321@gmail.com', 14, 'semAvatar.png'),
-('Marcos brendon de paula', 'Melissa5', 'marcos15975321@gmail.com', 15, 'semAvatar.png'),
-('Marcos brendon de paula', 'Melissa5', 'marcos15975321@gmail.com', 16, 'semAvatar.png'),
-('Marcos brendon de paula', 'Melissa5', 'marcos15975321@gmail.com', 17, 'semAvatar.png'),
-('Marcos Brendon de paula Azevedo', 'Melissa5', 'nexgamer0@gmail.com', 18, 'semAvatar.png'),
-('teste testea', '1345641', 'teste@g.com', 19, 'semAvatar.png'),
-('sssss dddddd', 'ddddddd', 'dddddd', 20, 'semAvatar.png'),
-('Ana Rodrigues', 'kkkkkk', 'anapaula@gmail.com', 21, 'semAvatar.png'),
-('sadasd sadsdas', 'asdasdasd', 'sadasdsd@gmail.com', 22, 'semAvatar.png'),
 ('Marcos Brendon', 'Melissa5', 'nexgamer0@gmail.com', 23, 'semAvatar.png'),
 ('Marcos Brendon', 'Melissa5', 'marcos897@gmail.com', 24, 'WIN_20190917_20_12_50_Pro.jpg'),
 ('wellington Schiavi', 'tururuuuuuuu', 'wellington@@@.com', 25, 'WIN_20190917_20_18_29_Pro.jpg'),
-('teste novamente', 'Melissa5', 'sadasdasd@@@@.com', 26, 'semAvatar.png');
+('Eric Rodrigues', '15975321', 'eric_rodrigues29@hotmail.com', 27, 'WIN_20190918_14_10_16_Pro.jpg'),
+('Maria veron', '15975321', 'mariveron@hotmail.com', 28, 'WIN_20190918_14_12_23_Pro.jpg'),
+('Ana Paula', 'anapaula12345', 'anapaula@gmail.com', 29, 'WIN_20190918_14_16_05_Pro.jpg'),
+('Jose Filipe', '123456789', 'jose@gmail.com', 30, 'WIN_20190918_15_17_25_Pro.jpg'),
+('Diego Luiz', '12345678', 'diegoreke@hotmail.com', 31, 'WIN_20190918_16_12_16_Pro.jpg'),
+('sadsad asdasdasd', 'sadsdsadsad', 'asdsadasd', 38, 'WIN_20190918_16_12_16_Pro.jpg'),
+('sadsad asdasdasd', 'sadsdsadsad', 'asdsadasd', 39, 'WIN_20190918_16_12_16_Pro.jpg');
 
 --
 -- Indexes for dumped tables
 --
 
 --
--- Indexes for table `curriculos`
+-- Indexes for table `curriculo`
 --
-ALTER TABLE `curriculos`
+ALTER TABLE `curriculo`
   ADD PRIMARY KEY (`ID`);
 
 --
@@ -90,16 +99,16 @@ ALTER TABLE `usuario`
 --
 
 --
--- AUTO_INCREMENT for table `curriculos`
+-- AUTO_INCREMENT for table `curriculo`
 --
-ALTER TABLE `curriculos`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `curriculo`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
