@@ -1,11 +1,6 @@
 
 /*JS responsável por realizar a validação dos campos de INPUTS do cadastro */
 
-// var nome = document.getElementById("nomee")
-// var cpf = document.getElementById("cpff")
-// var endereco = document.getElementById("enderecoo")
-// var email = document.getElementById("emaill")
-// var curriculo = document.getElementById("curriculoo")
 
 function verifica_email(form){
     if(form.Email.value.indexOf('@')==-1 || form.Email.value.indexOf('.')==-1)

@@ -52,6 +52,7 @@ nav{
     width: 100%;
     background-color: transparent;  
     justify-content: center;
+    flex-wrap: wrap;
 }
 #cadastro-container{
     display:flex;
@@ -68,7 +69,6 @@ nav{
     margin-top:2vh;
     margin-bottom: 5vh;
     background-color: rgba(255, 255, 255, 0.993);
-    height: 130vh;
     width: 120vh;
     border-radius: 10px;
 }
@@ -81,11 +81,14 @@ nav{
     margin-left: 6vh;
 }
 #Rodape {
+    position: relative;
     font-size: 7px;
     font-style: arial;
     color:white;
     background-color: rgba(0, 0, 0, 0.5);
     text-align: right;    
+    
 }
-  
+
+
   
