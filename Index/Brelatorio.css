@@ -1,0 +1,22 @@
+#BuscaDiv{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+#listaEmails{
+	border: 5px solid black;
+	border-radius: 15px;
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+#Emails{
+	font-size: 40px;
+}
+.divDado{
+}
+.divDado span{
+	font-size: 40px;
+}
