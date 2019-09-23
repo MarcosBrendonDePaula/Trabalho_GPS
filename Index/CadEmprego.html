@@ -27,7 +27,7 @@
         <div id="cadastro-container">
             <h2 style="color:white; text-align: center; margin-top: 2vh;">CADASTRE SEU CURRÍCULO</h2>
             <p style="color:white; text-align:center;">Informe os dados abaixo e tenha a oportunidade de trabalhar conosco</p>
-            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post" onsubmit="return false">
+            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post" onsubmit="verificador(this); return false;">
                 <!-----------------------------------------Nome------------------------------------------------>
                 <div class="entradas-form"> 
                     <label for="nome">Nome</label> <br>
@@ -117,7 +117,7 @@
                 </div>
                 <!-----------------------------------------Button de ENVIAR------------------------------------------------>
                 <div class="entradas-form">
-                    <button style="height: 6vh; width: 20vh; margin-left: 20vh;" name="Enviar" onclick="verificador()">Salvar & Enviar</button>
+                    <button style="height: 6vh; width: 20vh; margin-left: 20vh;" name="Enviar">Salvar & Enviar</button>
                 </div>
 
             </form>

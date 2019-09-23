@@ -1,48 +1,49 @@
 
 /*JS responsável por realizar a validação dos campos de INPUTS do cadastro */
 
-var nome = document.getElementById("nomee")
-var cpf = document.getElementById("cpff")
-var endereco = document.getElementById("enderecoo")
-var email = document.getElementById("emaill")
-var curriculo = document.getElementById("curriculoo")
+// var nome = document.getElementById("nomee")
+// var cpf = document.getElementById("cpff")
+// var endereco = document.getElementById("enderecoo")
+// var email = document.getElementById("emaill")
+// var curriculo = document.getElementById("curriculoo")
 
-function verifica_email(){
-    if(email.value.indexOf('@')==-1 || email.value.indexOf('.')==-1)
+function verifica_email(form){
+    if(form.Email.value.indexOf('@')==-1 || form.Email.value.indexOf('.')==-1)
         return false
     return true
 }
-function verifica_nome(){
-    if(nome.value.length<3)
+function verifica_nome(form){
+    if(form.Nome.value.length<3)
         return false
     return true
 }
-function verifica_cpf(){
-    if(cpf.value.length!=14)
+function verifica_cpf(form){
+    if(form.CPF.value.length!=14)
         return false
     return true
 }
-function verificador(){
+function verificador(form){
     let retorno = true
     let flag = true
     let resultado = "O(s) Campo(s) de: "
-    if(nome.value == ""){
+    if(form.Nome.value == ""){
         resultado+="Nome, "
         flag=false
     }
-    if(cpf.value == ""){
+    if(form.CPF.value == ""){
         resultado+="CPF, "
         flag=false
     }
-    if(endereco.value == ""){
+    if(form.Endereco.value == ""){
         resultado+="Endereço, "
         flag=false
     }
-    if(email.value == ""){
+    
+    if(form.Email.value == ""){
         resultado+="Email, "
         flag=false
     }
-    if(curriculo.value == ""){
+    if(form.Curriculo.value == ""){
         resultado+="Currículo "
         flag=false
     }
@@ -52,12 +53,13 @@ function verificador(){
         alert(resultado)
         return false
     }
+    
     else{ //se chegou até aqui é porque todos os campos estão completos
         let aux= "O(s) campo(s): "
         let aux2= true
-        let retorno1 = verifica_email() //se caso o email seja valido=> retorno1=true, senão retorno1=false
-        let retorno2 = verifica_nome()//se caso o nome seja valido=> retorno2= true, senão retorno2=false
-        let retorno3 = verifica_cpf()//se caso o nome seja valido=> retorno3= true, senão retorno3=false
+        let retorno1 = verifica_email(form) //se caso o email seja valido=> retorno1=true, senão retorno1=false
+        let retorno2 = verifica_nome(form)//se caso o nome seja valido=> retorno2= true, senão retorno2=false
+        let retorno3 = verifica_cpf(form)//se caso o nome seja valido=> retorno3= true, senão retorno3=false
         if(retorno1==false){
             aux+="Email, " 
             aux2= false
