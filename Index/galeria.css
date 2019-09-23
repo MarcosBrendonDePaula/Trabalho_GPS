@@ -149,6 +149,14 @@ h2 a{
     border-radius: 2px;
 }
 
+#instagram_logo{
+    left: 14%;
+    top: 58%;
+    background-image: url("galeria/instagram.png");
+    border: 1.5px solid white;
+    border-radius: 2px;
+}
+
 .box_img img{
     opacity: 0;
     margin-top: 10vh;
