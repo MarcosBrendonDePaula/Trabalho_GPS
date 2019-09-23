@@ -25,22 +25,23 @@
     </header>
     <div id="block-cadastro">
         <div id="cadastro-container">
-            <h2 style="color:white; text-align: center; margin-top: 2vh;">CADASTRE SEU CURRÍCULO</h2>
+            <h2 style="color:white; text-align: center; margin-top: 2vh;">CADASTRE-SE</h2>
             <p style="color:white; text-align:center;">Informe os dados abaixo e tenha a oportunidade de trabalhar conosco</p>
-            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post" onsubmit="return false">
+            <p style="color:white; text-align:center; text-decoration: underline;"><em>Os campos onde há <span style="color:#eee8aa">*</span> são obrigatórios</em></p>
+            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post" onsubmit="verificador(this);"><!--onsubmit="verificador(this); return false;"-->
                 <!-----------------------------------------Nome------------------------------------------------>
                 <div class="entradas-form"> 
-                    <label for="nome">Nome</label> <br>
+                    <label for="nome">Nome *</label> <br>
                     <input type="text" style="width: 70vh; height: 4vh;" name="Nome" id="nomee">  
                 </div>
                 <!-----------------------------------------CPF------------------------------------------------>
                 <div class="entradas-form"> 
-                    <label for="cpf">CPF</label> <br>
+                    <label for="cpf">CPF *</label> <br>
                     <input type="text" style="width: 30vh; height: 4vh;" placeholder="000.000.000-10" name="CPF" id="cpff">  
                 </div>
                 <!-----------------------------------------Endereço------------------------------------------------>
                 <div class="entradas-form"> 
-                    <label for="endereco">Endereço</label> <br>
+                    <label for="endereco">Endereço *</label> <br>
                     <input type="text" style="width: 70vh; height: 4vh;" placeholder="Digite seu Endereço" name="Endereco" id="enderecoo">  
                 </div>
                 <!-----------------------------------------Sexo------------------------------------------------>
@@ -54,7 +55,7 @@
                 </div>
                 <!-----------------------------------------Email------------------------------------------------>
                 <div class="entradas-form"> 
-                    <label for="email">Email</label> <br>
+                    <label for="email">Email *</label> <br>
                     <input type="text" style="width: 70vh; height: 4vh;" placeholder="exemplo@gmail.com" name="Email" id="emaill">  
                 </div>
                 <!-----------------------------------------Idade------------------------------------------------>
@@ -100,13 +101,13 @@
                 </div>
                 <!-----------------------------------------Curriculo------------------------------------------------>
                 <div class="entradas-form">
-                    <label for="curr">Currículo Profissional</label> <br>
-                    <textarea name="Curriculo" id="curriculoo" cols="85" rows="30" maxlength="10000" style="resize: none; border-radius: 5px;"></textarea>
+                    <div id="cu" style=" border: 2px solid #3a3a27; padding: 1vh 3vh; width: 30vh; text-align: center; border-radius: 10px; background-color: #474838; color: white;">Curriculo Profissional *</div>
+                    <textarea name="Curriculo" id="curriculoo" cols="85" rows="30" maxlength="10000" style=" display: none; resize: none; border-radius: 5px;"></textarea>
                 </div>
                 <!-----------------------------------------Foto de perfil------------------------------------------------>
                 <div class="entradas-form">
-                        <label for="">Anexe sua foto de Perfil</label><br>
-                        <input type="file" name="userfile">
+                    <label for="">Anexe sua foto de Perfil</label><br>
+                    <input type="file" name="userfile">
                 </div>
                 <!--Marcos PEDIU-->
                 <div class="entradas-form">
@@ -117,7 +118,7 @@
                 </div>
                 <!-----------------------------------------Button de ENVIAR------------------------------------------------>
                 <div class="entradas-form">
-                    <button style="height: 6vh; width: 20vh; margin-left: 20vh;" name="Enviar" onclick="verificador()">Salvar & Enviar</button>
+                    <button style="height: 6vh; width: 20vh; margin-left: 20vh; margin-bottom: 4vh;background-color: #3a3a27; border: 1px solid #3a3a27; border-radius: 10px; color: white;" name="Enviar">Salvar & Enviar</button>
                 </div>
 
             </form>
@@ -125,10 +126,11 @@
     </div>
     
     <script src="cadEmprego.JS"></script>
+    <script src="cadEmpregoAnim.JS"></script>
 </body>
 
 <footer id = 'Rodape'>
-    <h1> <em>Termos de uso &nbsp;&nbsp;&nbsp;&nbsp; Privacidade e cookies </em></h1>
+    <h1 style="margin-right: 3vh;"> <em>Termos de uso &nbsp;&nbsp;&nbsp;&nbsp; Privacidade e cookies </em></h1>
 </footer>
 
 </html>

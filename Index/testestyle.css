@@ -79,7 +79,6 @@ figure {
     float: left;
     width: 30%;
     text-align: center;
-    /* border: thin #D3D3D3 solid;  */
     border: thin solid #3a3a27;
     margin: 0.2em;
     margin-left: 0.5%;
@@ -97,23 +96,30 @@ figcaption{
 #job-section{
     display: flex;
     width: 100%;
-    /* height: 50vh; */
-    /* background-color: #474838;  pode ser esse */
     background-color:#3a3a27 ;
     margin-top: 0.6vh;
-    /* border-top: 3px solid black; */
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     color:white;
 }
 #explanation{
+    display: flex;
     width: 185vh;
-    height: 40vh;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #474838;
-    /* background-color: white; */
     margin-left: 10vh;
-    margin-bottom: 2vh;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+#explanation p{
+    font-size: 3vh;
+    margin-left: 3vh; 
+    margin-top: 1vh;
+    text-align: justify; 
+    padding-right: 3vh;
 }
 .Rodape {
     text-align: center;
