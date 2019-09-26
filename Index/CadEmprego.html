@@ -1,67 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link rel="stylesheet" href="StyleCadEmprego.css">
     <style>
-            @import url('https://fonts.googleapis.com/css?family=Amaranth&display=swap');
-    </style> 
+        @import url('https://fonts.googleapis.com/css?family=Amaranth&display=swap');
+    </style>
     <link rel="shortcut icon" href="icon.ico" type="image/x-icon" />
+    <script src="cadEmprego.JS" defer></script>
+    <script src="cadEmpregoAnim.JS" defer></script>
     <title>Simple Cake</title>
 </head>
 <!--Comentario -->
+
 <body>
     <header>
         <nav>
-            <a  href="teste.html" class="menuitems"> Home</a>
-            <a  href="teste.html" class="menuitems"> Quem somos nós</a>
-            <a  href="teste.html" class="menuitems"> Monte seu Bolo</a>
-            <a  href="galeria.html" class="menuitems"> Galeria</a>      
+            <a href="teste.html" class="menuitems"> Home</a>
+            <a href="teste.html" class="menuitems"> Quem somos nós</a>
+            <a href="teste.html" class="menuitems"> Monte seu Bolo</a>
+            <a href="galeria.html" class="menuitems"> Galeria</a>
         </nav>
         <div>
             <a href="login2.html" id="log">Login</a>
             <a href="cadastro.html" id="cad">Cadastrar-se</a>
-        </div>   
+        </div>
     </header>
     <div id="block-cadastro">
         <div id="cadastro-container">
             <h2 style="color:white; text-align: center; margin-top: 2vh;">CADASTRE-SE</h2>
-            <p style="color:white; text-align:center;">Informe os dados abaixo e tenha a oportunidade de trabalhar conosco</p>
+            <p style="color:white; text-align:center;">Informe os dados abaixo e tenha a oportunidade de trabalhar
+                conosco</p>
             <p style="color:white; text-align:center; text-decoration: underline;"><em>Os campos onde há <span style="color:#eee8aa">*</span> são obrigatórios</em></p>
-            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post" onsubmit="verificador(this);"><!--onsubmit="verificador(this); return false;"-->
+            
+            <form id="cadastro-form" enctype="multipart/form-data" action="RecevDados.php" method="post" ><!--onsubmit="verificador(this); return false;"-->
                 <!-----------------------------------------Nome------------------------------------------------>
-                <div class="entradas-form"> 
+                <div class="entradas-form">
                     <label for="nome">Nome *</label> <br>
-                    <input type="text" style="width: 70vh; height: 4vh;" name="Nome" id="nomee">  
+                    <input type="text" style="width: 70vh; height: 4vh;" name="Nome">
+                    <div class="resposta-input"><span></span></div>
+                    <!--Resposta input: posicao 0-->
                 </div>
                 <!-----------------------------------------CPF------------------------------------------------>
-                <div class="entradas-form"> 
-                    <label for="cpf">CPF *</label> <br>
-                    <input type="text" style="width: 30vh; height: 4vh;" placeholder="000.000.000-10" name="CPF" id="cpff">  
+                <div class="entradas-form" style="width: 35vh; margin-left: 15vh;">
+                    <label for="cpf" style=" padding-left: 15vh;">CPF *</label> <br>
+                    <input type="text" style="width: 16vh; height: 4vh; margin-left:13vh;" placeholder="000.000.000-10"
+                        name="CPF">
+                    <div class="resposta-input" style="margin-left: 13vh; width: 25vh;"></div>
+                    <!--Resposta input: posicao 1-->
                 </div>
                 <!-----------------------------------------Endereço------------------------------------------------>
-                <div class="entradas-form"> 
+                <div class="entradas-form">
                     <label for="endereco">Endereço *</label> <br>
-                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="Digite seu Endereço" name="Endereco" id="enderecoo">  
+                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="Digite seu Endereço"
+                        name="Endereco">
+                    <div class="resposta-input"></div>
+                    <!--Resposta input: posicao 2-->
                 </div>
                 <!-----------------------------------------Sexo------------------------------------------------>
-                <div class="entradas-form"> 
-                    <label for="sexo">Sexo</label> <br>
-                    <select name="sexo" id="">
+                <div class="entradas-form entradas-formv2">
+                    <label for="sexo" style="padding: 10vh;">Sexo</label> <br>
+                    <select name="sexo" id="" style="margin-left: 8vh;">
                         <option value="M">Masculino</option>
                         <option value="F">Feminino</option>
                         <option value="O">Outro</option>
                     </select>
                 </div>
                 <!-----------------------------------------Email------------------------------------------------>
-                <div class="entradas-form"> 
+                <div class="entradas-form">
                     <label for="email">Email *</label> <br>
-                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="exemplo@gmail.com" name="Email" id="emaill">  
+                    <input type="text" style="width: 70vh; height: 4vh;" placeholder="exemplo@gmail.com" name="Email">
+                    <div class="resposta-input"></div>
+                    <!--Resposta input: posicao 3-->
                 </div>
                 <!-----------------------------------------Idade------------------------------------------------>
-                <div class="entradas-form">
-                    <label for="idade">Idade</label><br>
-                    <select name="Idade" id="">
+                <div class="entradas-form entradas-formv2">
+                    <label for="idade" style="padding: 10vh;">Idade</label><br>
+                    <select name="Idade" id="" style="margin-left: 10vh;">
                         <option value="16">16</option>
                         <option value="17">17</option>
                         <option value="18">18</option>
@@ -99,10 +114,16 @@
                         <option value="50">50</option>
                     </select>
                 </div>
+
                 <!-----------------------------------------Curriculo------------------------------------------------>
                 <div class="entradas-form">
-                    <div id="cu" style=" border: 2px solid #3a3a27; padding: 1vh 3vh; width: 30vh; text-align: center; border-radius: 10px; background-color: #474838; color: white;">Curriculo Profissional *</div>
-                    <textarea name="Curriculo" id="curriculoo" cols="85" rows="30" maxlength="10000" style=" display: none; resize: none; border-radius: 5px;"></textarea>
+                    <div id="cu"
+                        style=" border: 2px solid #3a3a27; padding: 1vh 3vh; width: 30vh; text-align: center; border-radius: 10px; background-color: #474838; color: white;">
+                        Curriculo Profissional *</div>
+                    <div class="resposta-input"></div>
+                    <!--Resposta input: posicao 4-->
+                    <textarea name="Curriculo" id="curriculoo" cols="93" rows="30" maxlength="10000"
+                        style=" display: none; resize: none; border-radius: 5px; margin-bottom: 2vh;"></textarea>
                 </div>
                 <!-----------------------------------------Foto de perfil------------------------------------------------>
                 <div class="entradas-form">
@@ -110,26 +131,29 @@
                     <input type="file" name="userfile">
                 </div>
                 <!--Marcos PEDIU-->
-                <div class="entradas-form">
+                <div>
                     <input type="hidden" name="Mode" value="CadCu">
                 </div>
-                <div class="entradas-form">
+                <div>
                     <input type="hidden" name="Senha">
                 </div>
                 <!-----------------------------------------Button de ENVIAR------------------------------------------------>
+
+                <div class="entradas-form" name="Config">
+                    <button type="button" style="height: 6vh; width: 20vh;margin-bottom: 4vh;background-color: #3a3a27; border: 1px solid #3a3a27; border-radius: 10px; color: white;" name="Salvar">Salvar</button>
+                </div>
                 <div class="entradas-form">
-                    <button style="height: 6vh; width: 20vh; margin-left: 20vh; margin-bottom: 4vh;background-color: #3a3a27; border: 1px solid #3a3a27; border-radius: 10px; color: white;" name="Enviar">Salvar & Enviar</button>
+                    <button disabled style="height: 6vh; width: 20vh; margin-bottom: 4vh;background-color: #3a3a27; border: 1px solid #3a3a27; border-radius: 10px; color: white;"name="Enviar">Enviar</button>
                 </div>
 
             </form>
+
         </div>
     </div>
-    
-    <script src="cadEmprego.JS"></script>
-    <script src="cadEmpregoAnim.JS"></script>
+
 </body>
 
-<footer id = 'Rodape'>
+<footer id='Rodape'>
     <h1 style="margin-right: 3vh;"> <em>Termos de uso &nbsp;&nbsp;&nbsp;&nbsp; Privacidade e cookies </em></h1>
 </footer>
 
