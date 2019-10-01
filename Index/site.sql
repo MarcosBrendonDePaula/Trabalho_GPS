@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: 23-Set-2019 às 20:14
+-- Generation Time: 01-Out-2019 às 20:13
 -- Versão do servidor: 5.7.25
 -- versão do PHP: 7.1.26
 
@@ -45,8 +45,9 @@ CREATE TABLE `curriculo` (
 --
 
 INSERT INTO `curriculo` (`Nome`, `Endereco`, `Email`, `Cpf`, `Foto`, `Sexo`, `Curriculo`, `Idade`, `ID`) VALUES
-('Marcos Brendon', 'r incaio sutil de oliveira', 'nexgamer0@gmail.com', '11961176912', 'im1.jpg', 'M', 'ferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\nferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nadaferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nadaferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\n\r\nferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nadaferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\nferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\nferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nadaferrou bixo\r\neu nao sei fazer nada\r\npena q eu nao faço nada\r\n', 16, 4),
-('Adolf Augustinho', 'asdasdasdasdasd', 'teste@gmail.com', '159753214586', 'WIN_20190918_16_12_16_Pro.jpg', 'O', 'augustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvvvv\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvvaugustinho carrara\r\nEsasdasdsadsadasdvaugustinho carrara\r\nEsasdasdsadsadasdvvvaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd', 24, 5);
+('Adolf Augustinho', 'asdasdasdasdasd', 'teste@gmail.com', '159753214586', 'WIN_20190918_16_12_16_Pro.jpg', 'O', 'augustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvvvv\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvvaugustinho carrara\r\nEsasdasdsadsadasdvaugustinho carrara\r\nEsasdasdsadsadasdvvvaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdaugustinho carrara\r\nEsasdasdsadsadasdvaugustinho carrara\r\nEsasdasdsadsadasd\r\naugustinho carrara\r\nEsasdasdsadsadasd', 24, 5),
+('Marcos Brendon de Paula Azevedo', 'r incaio sutil de oliveira', 'nexgamer0@gmail.com', '119.611.769-12', 'WIN_20190930_20_41_37_Pro.jpg', 'M', 'Sou bom em nada', 20, 6),
+('teste', 'texte', 'texte@texte.com', '01041999', 'WIN_20190918_16_12_16_Pro.jpg', '', 'texte', 20, 7);
 
 -- --------------------------------------------------------
 
@@ -76,7 +77,8 @@ INSERT INTO `usuario` (`Nome`, `Senha`, `Email`, `ID`, `FotoId`) VALUES
 ('Jose Filipe', '123456789', 'jose@gmail.com', 30, 'WIN_20190918_15_17_25_Pro.jpg'),
 ('Diego Luiz', '12345678', 'diegoreke@hotmail.com', 31, 'WIN_20190918_16_12_16_Pro.jpg'),
 ('sadsad asdasdasd', 'sadsdsadsad', 'asdsadasd', 38, 'WIN_20190918_16_12_16_Pro.jpg'),
-('sadsad asdasdasd', 'sadsdsadsad', 'asdsadasd', 39, 'WIN_20190918_16_12_16_Pro.jpg');
+('sadsad asdasdasd', 'sadsdsadsad', 'asdsadasd', 39, 'WIN_20190918_16_12_16_Pro.jpg'),
+('marcos antonio', 'Ozvaldino15', 'ozvaldu@gmail.com', 40, 'semAvatar.png');
 
 --
 -- Indexes for dumped tables
@@ -102,13 +104,13 @@ ALTER TABLE `usuario`
 -- AUTO_INCREMENT for table `curriculo`
 --
 ALTER TABLE `curriculo`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `usuario`
 --
 ALTER TABLE `usuario`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=40;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
