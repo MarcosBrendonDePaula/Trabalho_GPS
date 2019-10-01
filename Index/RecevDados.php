@@ -36,7 +36,7 @@
 	}
 	
 	include("modulos/conexao.php");
-	$db = Connect("127.0.0.1","root","vertrigo","site");
+	$db = Connect("127.0.0.1","root","vertrigo","site"); 	
 	if(strcasecmp($_POST['Mode'],"Comando")==0){
 		Command($db,$_POST);
 	}
