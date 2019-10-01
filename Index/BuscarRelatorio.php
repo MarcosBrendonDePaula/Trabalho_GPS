@@ -17,7 +17,7 @@
 		<?php 
 			while($atual = sqlGet($tuplas)){ ?>
 			<div class="divDado">
-			<span> Email: <?php echo $atual['Email']; ?><span>
+				<span> Email: <?php echo $atual['Email']; ?><span>
 			</div>
 			<?php } ?>
 	</div>
