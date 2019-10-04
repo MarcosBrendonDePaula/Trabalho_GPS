@@ -1,6 +1,7 @@
 /*JS responsável por realizar a validação dos campos de INPUTS do cadastro */
 
 /*Flags para os campos */
+
 var flag1= false //nome
 var flag2= false //cpf
 var flag3= false //endereco
